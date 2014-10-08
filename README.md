@@ -21,6 +21,7 @@ This module has been tested to work on the following systems using Puppet v3 wit
  * Suse 9
  * Suse 10
  * Suse 11
+ * Suse 12
  * Ubuntu 12.04 LTS
 
 ===
@@ -339,6 +340,20 @@ config_file_mode
 Mode for config_file.
 
 - *Default*: '0640'
+
+config_file_lines
+--------------------
+Ordered array of limits that should be placed into limits.conf.
+Useful for Suse 10 which does not use limits.d.
+
+- *Default*: undef
+
+config_file_source
+------------------
+String with source path to a limits.conf
+
+- *Default*: undef
+
 
 limits_d_dir
 ------------
