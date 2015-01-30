@@ -54,8 +54,9 @@ describe 'pam::limits' do
     context 'with config_file_source specified as an valid string' do
       let(:facts) do
         {
-          :osfamily          => 'RedHat',
-          :lsbmajdistrelease => '6',
+          :osfamily                  => 'RedHat',
+          :lsbmajdistrelease         => '6',
+          :operatingsystemmajrelease => '6',
         }
       end
 
@@ -83,8 +84,9 @@ describe 'pam::limits' do
     context 'with config_file_contents specified as an valid array' do
       let(:facts) do
         {
-          :osfamily          => 'RedHat',
-          :lsbmajdistrelease => '6',
+          :osfamily                  => 'RedHat',
+          :lsbmajdistrelease         => '6',
+          :operatingsystemmajrelease => '6',
         }
       end
 
@@ -114,8 +116,9 @@ describe 'pam::limits' do
     context 'with config_file_contents specified as an invalid string' do
       let(:facts) do
         {
-          :osfamily          => 'RedHat',
-          :lsbmajdistrelease => '6',
+          :osfamily                  => 'RedHat',
+          :lsbmajdistrelease         => '6',
+          :operatingsystemmajrelease => '6',
         }
       end
 
@@ -137,8 +140,9 @@ describe 'pam::limits' do
     context 'with config_file_source specified as an valid string and config_file_contents specified as an valid array' do
       let(:facts) do
         {
-          :osfamily          => 'RedHat',
-          :lsbmajdistrelease => '6',
+          :osfamily                  => 'RedHat',
+          :lsbmajdistrelease         => '6',
+          :operatingsystemmajrelease => '6',
         }
       end
 
